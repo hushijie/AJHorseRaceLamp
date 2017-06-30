@@ -15,6 +15,8 @@
 		9D3581521F05FDD900ADD886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3581501F05FDD900ADD886 /* LaunchScreen.storyboard */; };
 		9D35815D1F05FDD900ADD886 /* AJHorseRaceLampTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35815C1F05FDD900ADD886 /* AJHorseRaceLampTests.m */; };
 		9D3581681F05FDD900ADD886 /* AJHorseRaceLampUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581671F05FDD900ADD886 /* AJHorseRaceLampUITests.m */; };
+		9D3581791F05FF2D00ADD886 /* AJHorseRaceLampView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3581781F05FF2D00ADD886 /* AJHorseRaceLampView.m */; };
+		9D35817C1F05FFC700ADD886 /* AJHorseRaceLampCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35817B1F05FFC700ADD886 /* AJHorseRaceLampCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9D3581631F05FDD900ADD886 /* AJHorseRaceLampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AJHorseRaceLampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3581671F05FDD900ADD886 /* AJHorseRaceLampUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AJHorseRaceLampUITests.m; sourceTree = "<group>"; };
 		9D3581691F05FDD900ADD886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3581771F05FF2D00ADD886 /* AJHorseRaceLampView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHorseRaceLampView.h; sourceTree = "<group>"; };
+		9D3581781F05FF2D00ADD886 /* AJHorseRaceLampView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHorseRaceLampView.m; sourceTree = "<group>"; };
+		9D35817A1F05FFC700ADD886 /* AJHorseRaceLampCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJHorseRaceLampCell.h; sourceTree = "<group>"; };
+		9D35817B1F05FFC700ADD886 /* AJHorseRaceLampCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJHorseRaceLampCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9D3581411F05FDD900ADD886 /* AJHorseRaceLamp */ = {
 			isa = PBXGroup;
 			children = (
+				9D3581751F05FE6D00ADD886 /* Classes */,
 				9D3581451F05FDD900ADD886 /* AppDelegate.h */,
 				9D3581461F05FDD900ADD886 /* AppDelegate.m */,
 				9D3581481F05FDD900ADD886 /* ViewController.h */,
@@ -138,6 +145,25 @@
 				9D3581691F05FDD900ADD886 /* Info.plist */,
 			);
 			path = AJHorseRaceLampUITests;
+			sourceTree = "<group>";
+		};
+		9D3581751F05FE6D00ADD886 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9D3581761F05FE6D00ADD886 /* AJHorseRaceLamp */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9D3581761F05FE6D00ADD886 /* AJHorseRaceLamp */ = {
+			isa = PBXGroup;
+			children = (
+				9D3581771F05FF2D00ADD886 /* AJHorseRaceLampView.h */,
+				9D3581781F05FF2D00ADD886 /* AJHorseRaceLampView.m */,
+				9D35817A1F05FFC700ADD886 /* AJHorseRaceLampCell.h */,
+				9D35817B1F05FFC700ADD886 /* AJHorseRaceLampCell.m */,
+			);
+			path = AJHorseRaceLamp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,7 @@
 		9D3581371F05FDD900ADD886 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AJ;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = AJ;
 				TargetAttributes = {
@@ -276,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3581791F05FF2D00ADD886 /* AJHorseRaceLampView.m in Sources */,
+				9D35817C1F05FFC700ADD886 /* AJHorseRaceLampCell.m in Sources */,
 				9D35814A1F05FDD900ADD886 /* ViewController.m in Sources */,
 				9D3581471F05FDD900ADD886 /* AppDelegate.m in Sources */,
 				9D3581441F05FDD900ADD886 /* main.m in Sources */,
@@ -429,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = AJHorseRaceLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJHorseRaceLamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M953KLT6PD;
 				INFOPLIST_FILE = AJHorseRaceLamp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AJHorseRaceLamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
